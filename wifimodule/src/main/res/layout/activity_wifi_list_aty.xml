@@ -15,7 +15,7 @@
             android:id="@+id/tv_open"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="打开wifi"
+            android:text="1打开wifi"
             android:textSize="16sp" />
 
         <TextView
