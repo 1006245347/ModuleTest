@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WifiListAty">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/tv_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开wifi"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/tv_open"
+            android:text="搜索wifi"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_cur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_open"
+            android:layout_marginTop="10dp"
+            android:hint="wifiName"
+            android:text="当前wifi"
+            android:textColor="#40B4D3"
+            android:textColorHint="#40B4D3"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_cur"
+            android:hint="pwd"
+            android:textColor="#40B4D3"
+            android:textColorHint="#40B4D3"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_input"
+            android:text="确定"
+            android:layout_toRightOf="@+id/et_input"
+            android:textSize="16sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_input"
+            android:layout_marginTop="20dp"
+            android:overScrollMode="never" />
+    </RelativeLayout>
+</RelativeLayout>
